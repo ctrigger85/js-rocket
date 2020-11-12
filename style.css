@@ -1,0 +1,10 @@
+.cool {
+	height: 100px;
+	width: 100px;
+	background-color: orange;
+	transition: background-color:1s;
+}
+
+.cool.red{
+	background-color: red;
+}
