@@ -1,19 +1,30 @@
+
 .left {
 	position: fixed;
-	background-color: aquamarine;
+	background-color: #589982;
 	width: 50%;
 	height: 100%;
 	top: 0;
 	left: 0;
+    
 }
 
 .right{
     position: fixed;
-	background-color: red;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAAFLCAMAAAAdwbUmAAAAYFBMVEUAAABMTEz///9QUFAfHx8yMjIrKytnZ2cVFRVHR0dBQUENDQ0lJSU8PDwaGhoQEBD09PSTk5OxsbFoaGgnJyc3NzdcXFyKiopiYmLQ0NDg4OBzc3PBwcGBgYGqqqqhoaHqwA7GAAABc0lEQVR4nO3d2U4CQRAFUB0EXEBBXFhc/v8vfTNR0yRC91Rl5pzXCZ2bDJmH6urqi4tM7puu/nD6T2/qpeh9dYCzTKIDAEn4Gny7WkUnKNlGBwB6NosOUDKNDgD/Muvm0REK1tfRCWBkbmssMlnXWOWnRf0lAQBgoO6iA5RcRgcgIf+KFtJ2YLXtiANIb/oYnaBg09mKAajlOusn9clOW2tpqzHPV9EJAHry8hqdoGDboIVmONSHx2y3j05QMD9EJwAAALLIur8LcCqTUmIog5JL2vkXaYMBAADjtq8yhamBTdrOZYh29OBEZK3u7cizebfsLccfT8cebvpKATBkyzPuhWoq6zFIAACoKe2khdPLQdrRAAAAAH65S3sjQ0vKRACMyHvWpv6Pl+gEMDSHrENRpml3noEedLPoBAXP0QEAAGAIFoGH/KGCG7NnYFS0igBQMNlFJyjYrqITAAAwNrdd1grK5+iquVnfRHVTd20B0MoXu3UEffFjl3UAAAAASUVORK5CYII=);
 	width: 50%;
 	height: 100%;
 	top: 0;
 	right: 0;
+
+}
+
+h1{
+	font-family: 'Goldman', cursive;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 100px;
+
 }
 
 .ground{
@@ -29,17 +40,33 @@
 .rocket{
 	position: absolute;
 	left: 50%;
-	bottom: 20px;
-	width: 20px;
-	height: 100px;
-	background-color: black;
+	bottom: -200px;
+	width: 282px;
+	height: 638px;
+	background: url('../img/rocket11.png') no-repeat 0 0;
 	transition: bottom 10000ms;
 }
+/* rocet bg image*/
 
+body.body-state2 .rocket{
+background: url('../img/rocket11.gif');
+}
+
+body.body-state3 .rocket,
+body.body-state4 .rocket{
+
+}
+
+body.body-state5 .rocket {
+	background-image: url('../img/bang.gif');
+}
 
 body.body-state1 .rocket{
 	transition: none;
 }
+
+
+
 body.body-state3 .rocket, 
 body.body-state4 .rocket{
 	bottom: 1000px;
@@ -61,3 +88,44 @@ body.body-state4 .state4{display: block;}
 body.body-state5 .state5{display: block;}
 
 
+
+.button1{
+	font-size: 50px;
+	color: red;
+	font-family: 'Orbitron', sans-serif;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    border-color: black;
+    border-style: solid;
+    border-width: 10px;
+ 	
+}
+
+
+.button2{
+	font-size: 20px;
+	color: red;
+	font-family: 'Orbitron', sans-serif;
+	display: flex;
+    align-items: bottom;
+    justify-content: center;
+}
+
+h2{
+	font-family: 'Goldman', cursive;
+	font-size: 200px;
+	text-align: center;
+	color: #4A235A;
+}
+
+.button3, .button4{
+	font-size: 20px;
+	color: red;
+	font-family: 'Orbitron', sans-serif;
+	display: flex;
+    align-items: bottom;
+    justify-content: center;
+	
+}

@@ -18,7 +18,7 @@ document.getElementById('countdown')
 			if (countDownNumber <= 0) {
 				changeState(3);
 			}; 
-		}, 300);		
+		}, 500);		
 	} else if (state == 3) {
 		var sucess = setTimeout(function ()
 		{
@@ -26,7 +26,7 @@ document.getElementById('countdown')
 
 		console.log ('randomNumber:', randomNumber)	
 
-			if (randomNumber > 5) {
+			if (randomNumber > 8) {
 					changeState(4);
 			} else {
 				changeState(5);
